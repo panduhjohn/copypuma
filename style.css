@@ -1,8 +1,10 @@
 * {
     margin: 0;
-        /* width: 1080px; */
-}
 
+}
+body {
+    /* width: 100vw; */
+}
 .container {
     height: auto;
 
@@ -12,7 +14,6 @@
 }
 /*----------------------------------------------*/
 .header {
-    border: 1px solid black;
     color: white;
     background-color: black;
     height: 40px;
@@ -21,6 +22,7 @@
     align-items: center;
     font-family: raleway, sans-serif;
     font-size: 12px;
+    width: auto;
 }
 /*----------------------------------------------*/
 .menu {
@@ -38,7 +40,7 @@
 /*----------------------------------------------*/
 .redvan img {
     height: 1292px;
-    width: 100%;
+    width: auto;
 
 }
 /*----------------------------------------------*/
@@ -47,37 +49,37 @@
     align-items: space-evenly;
     flex-wrap: wrap;
     height: 1400px;
-    width: 2300px;
+    width: auto;
 }
 
 #short {
     height: 600px;
-    width: 600px;
+    width: auto;
 }
 #hybrid {
     height: 600px;
-    width: 600px;
+    width: auto;
 }
 #floral {
     height: 600px;
-    width: 600px;
+    width: auto;
 }
 #polo {
     height: 600px;
-    width: 600px;
+    width: auto;
 }
 #pants {
     height: 600px;
-    width: 600px;
+    width: auto;
 }
 #blazer {
     height: 600px;
-    width: 600px;
+    width: auto;
 }
 /*----------------------------------------------*/
 .officialshirts img {
     height: 1292px;
-    width: 100%%;
+    width: auto;
 }
 /*----------------------------------------------*/
 .follow {
@@ -102,23 +104,23 @@
 
 #blueshorts {
     height: 410px;
-    width: 320px;
+    width: auto;
 }
 #uglyshirt {
     height: 410px;
-    width: 410px;
+    width: auto;
 }
 #blackdude {
     height: 410px;
-    width: 410px;
+    width: auto;
 }
 #chair {
     height: 410px;
-    width: 410px;
+    width: auto;
 }
 #flowershirt {
     height: 410px;
-    width: 320px;
+    width: auto;
 }
 
 /* .footer li {
@@ -130,10 +132,10 @@
 
 .footer {
     height: 500px;
-    width: 1800px;
+    width: auto;
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    justify-content: space-between;
 }
 
 .footer li {
@@ -141,17 +143,17 @@
 }
 .service {
     height: 170px;
-    width: 240px;
+    width: auto;
 }
 
 .company {
     height: 170px;
-    width: 240px;
+    width: auto;
 }
 
 .signup {
     height: 240px;
-    width: 320px;
+    width: auto;
 }
 
 input {
@@ -165,7 +167,7 @@ input {
 
 .creditcards {
     height: 80px;
-    width: 1780px;
+    width: auto;
 }
 
 .creditcards p {
@@ -180,14 +182,19 @@ input {
 
 /*----------------------------------------------*/
 
-@media screen and (min-width: 400px) {
+
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
   body {
-    background-color: lightgreen;
+    background-color: green;
   }
 }
 
-@media screen and (min-width: 800px) {
+/*TABLET*/
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
   body {
-    background-color: lavender;
+    background-color: blue;
   }
 }
