@@ -1,15 +1,16 @@
 * {
     margin: 0;
-        width: 100%;
+        /* width: 1080px; */
 }
 
 .container {
     height: auto;
 
     display: grid;
+    font-family: raleway; /*FIND A WAY TO ADD THIS FONT */
 
 }
-
+/*----------------------------------------------*/
 .header {
     border: 1px solid black;
     color: white;
@@ -21,7 +22,7 @@
     font-family: raleway, sans-serif;
     font-size: 12px;
 }
-
+/*----------------------------------------------*/
 .menu {
     display: flex;
 
@@ -34,10 +35,19 @@
     justify-content: center;
     align-items: center;
 }
-
+/*----------------------------------------------*/
 .redvan img {
     height: 1292px;
-    width: 1920px;
+    width: 100%;
+
+}
+/*----------------------------------------------*/
+.clothing {
+    display: flex;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    height: 1400px;
+    width: 2300px;
 }
 
 #short {
@@ -64,9 +74,30 @@
     height: 600px;
     width: 600px;
 }
+/*----------------------------------------------*/
 .officialshirts img {
     height: 1292px;
-    width: 1920px;
+    width: 100%%;
+}
+/*----------------------------------------------*/
+.follow {
+
+}
+.follow p {
+    font-family: sans-serif;
+    font-size: 26px;
+
+    
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: raleway, sans-serif;
+
+}
+/*----------------------------------------------*/
+.caro {
+
 }
 
 #blueshorts {
@@ -94,7 +125,69 @@
     text-decoration: none;
 } */
 
+/*----------------------------------------------*/
+
+
+.footer {
+    height: 500px;
+    width: 1800px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.footer li {
+    list-style: none;
+}
+.service {
+    height: 170px;
+    width: 240px;
+}
+
+.company {
+    height: 170px;
+    width: 240px;
+}
+
+.signup {
+    height: 240px;
+    width: 320px;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    box-sizing: border-box;    
+}
+
+
+/*----------------------------------------------*/
+
+.creditcards {
+    height: 80px;
+    width: 1780px;
+}
+
+.creditcards p {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
 #cards {
     height: 43px;
     width: 486px;
+}
+
+/*----------------------------------------------*/
+
+@media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lavender;
+  }
 }
