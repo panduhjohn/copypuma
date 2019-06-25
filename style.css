@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+        width: 100%;
+}
+
+.container {
+    height: auto;
+
+    display: grid;
+
+}
+
+.header {
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: raleway, sans-serif;
+    font-size: 12px;
+}
+
+.menu {
+    display: flex;
+
+}
+
+#toplogo {
+    height: auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redvan img {
+    height: 1292px;
+    width: 1920px;
+}
+
+#short {
+    height: 600px;
+    width: 600px;
+}
+#hybrid {
+    height: 600px;
+    width: 600px;
+}
+#floral {
+    height: 600px;
+    width: 600px;
+}
+#polo {
+    height: 600px;
+    width: 600px;
+}
+#pants {
+    height: 600px;
+    width: 600px;
+}
+#blazer {
+    height: 600px;
+    width: 600px;
+}
+.officialshirts img {
+    height: 1292px;
+    width: 1920px;
+}
+
+#blueshorts {
+    height: 410px;
+    width: 320px;
+}
+#uglyshirt {
+    height: 410px;
+    width: 410px;
+}
+#blackdude {
+    height: 410px;
+    width: 410px;
+}
+#chair {
+    height: 410px;
+    width: 410px;
+}
+#flowershirt {
+    height: 410px;
+    width: 320px;
+}
+
+/* .footer li {
+    text-decoration: none;
+} */
+
+#cards {
+    height: 43px;
+    width: 486px;
+}
