@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 * {
     margin: 0;
 }
@@ -7,7 +9,7 @@ body {
 }
 .container {
     height: auto;
-    font-family: raleway, sans-serif; /*FIND A WAY TO ADD THIS FONT */
+    font-family: raleway, sans-serif; 
     display: grid;
     grid-template-areas:
         "free free free free free"
@@ -23,9 +25,7 @@ body {
         "cards cards cards cards cards"
     ;
 }
-h1 { 
-    font-family: Raleway; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Raleway; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Raleway; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Raleway; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Raleway; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; 
-}
+
 /*----------------------------------------------*/
 .header {
     grid-area: free;
@@ -34,8 +34,9 @@ h1 {
     height: 40px;
     justify-content: center;
     align-items: center;
-    font-family: raleway, sans-serif;
+    font-family: raleway;
     font-size: 12px;
+    letter-spacing: 0.2em;    
     /* width: auto; */
 }
 /*----------------------------------------------*/
@@ -56,10 +57,14 @@ h1 {
 .account {
     grid-area: name;
     background-color: pink;
+    font-size: 15px;
+    letter-spacing: 0.2em;
 }
 .topmenu {
     grid-area: name;
     background-color: green;
+    font-size: 15px;
+    letter-spacing: 0.2em;
 }
 /*----------------------------------------------*/
 
@@ -72,11 +77,9 @@ h1 {
     background-color: orange;
 }
 
-.vanlife {
+#vanlife {
     height: 1292px;
-    /* height: 500px; */
-
-    /* width: auto; */
+    width: auto;
 
 }
 /*----------------------------------------------*/
@@ -114,7 +117,7 @@ h1 {
 
 .officialshirts img {
     height: 1292px;
-    /* width: auto; */
+    width: auto;
 }
 /*----------------------------------------------*/
 .follow {
@@ -123,12 +126,12 @@ h1 {
 
 }
 .follow p {
-    font-family: sans-serif;
-    font-size: 26px;
+    font-size: 22px;
     height: 100px;
     justify-content: center;
     align-items: center;
     font-family: raleway, sans-serif;
+    letter-spacing: 0.2em;    
 
 }
 /*----------------------------------------------*/
@@ -161,6 +164,7 @@ h1 {
 
 .footer li {
     list-style: none;
+    font-size: 15px;
 }
 .service {
     height: 170px;
@@ -205,7 +209,7 @@ button {
 
 .creditcards p {
     font-family: sans-serif;
-    /* font-size: 12px; */
+    font-size: 12px;
 }
 
 #cards {
