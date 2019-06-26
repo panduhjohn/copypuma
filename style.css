@@ -50,7 +50,6 @@ body {
 }
 
 #toplogo {
-    height: auto;
     width: 300px;
     height: 38px;
     display: flex;
@@ -223,15 +222,21 @@ body {
     text-align: center;
     align-content: center;
     line-height: 1.65;
-    margin-left: -250px;   
+    margin-left: -250px;  
  
+}
+.service li {
+   padding-right: 150px;
 }
 
 .company {
     height: 170px;
     width: 170px;
     line-height: 1.65;
-
+        text-align: right;
+}
+.company li {
+    text-align: left;
 }
 
 .signup {
@@ -356,7 +361,7 @@ body {
     display: none;
 }
 
-#vanlifemob {     /*FIGURE OUT HOW TO REPLACE THIS WITH THE OG PHOTO*/
+#vanlifemob {
     display: block;
 }
 #burger {
