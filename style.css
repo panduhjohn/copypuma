@@ -2,13 +2,14 @@
 
 * {
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box;  */
 }
 
-body {
-    width: 100vw;
-}
+/* body {
+    max-width: 50%;
+} */
 .container {
+    max-width: 180%;
     height: auto;
     font-family: raleway, sans-serif; 
     display: grid;
@@ -25,8 +26,9 @@ body {
         "service service service service service"
         "cards cards cards cards cards"
         ;
+    grid-template-columns: repeat(1, 1fr) ; 
     /* I TRIED TO SET TO MOVE AROUND WITH GRID. MESSED EVERTHING UP */    
-    /* grid-template-columns: repeat(10, 10%); 
+    /* grid-template-columns: repeat(10, 10%) ; 
     grid-template-rows: repeat(100, 1%); */
 }
 
@@ -69,12 +71,13 @@ body {
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 12px;
 }
 
 .topmenu {
     grid-area: name;
     background-color: green;
-    font-size: 15px;
+    font-size: 13px;
     letter-spacing: 0.2em;
     display: flex;
     justify-content: center;
@@ -87,6 +90,7 @@ body {
     margin-right: 21px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 12px;
 }
 #burger {
     height: 30px;
@@ -105,13 +109,20 @@ body {
 
 /*----------------------------------------------*/
 .redvan {
+    display: grid;
     grid-area: van;
     background-color: orange;
+    /* object-fit: cover; */
+    width: 100%;
+    /* background-image: url(assets/redvan.jpg);
+    background-repeat: none;
+    background-size: contain; */
+
 }
 
 #vanlife {
     height: 1292px;
-    width: auto;
+    width: 100%;
 }
 
 #vanlifemob {
@@ -144,7 +155,7 @@ body {
 .pants {
     grid-area: pants;
     background-color: thistle;
-        display: flex;
+    display: flex;
     align-content: row;
     justify-content: space-evenly;
     /* flex-wrap: wrap; */
@@ -163,7 +174,7 @@ body {
 
 .officialshirts img {
     height: 1292px;
-    width: auto;
+    width: 100%;
 }
 /*----------------------------------------------*/
 .follow {
@@ -189,7 +200,7 @@ body {
 }
 .caro img {
     height: 410px;
-    width: auto;
+    width: 330px;
 }
 
 
@@ -204,7 +215,7 @@ body {
     grid-area: service;
     background-color: fuchsia;
     height: 420px;
-    width: 1800px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -231,7 +242,7 @@ body {
 
 .company {
     height: 170px;
-    width: 170px;
+    width: 200px;
     line-height: 1.65;
         text-align: right;
 }
@@ -317,10 +328,12 @@ body {
 #burger {
     height: 30px;
     width: 30px;
+    display: block;
 }
 #cart {
     height: 30px;
     width: 30px;
+    display: block;
 }
 .account p {
     display: none;
@@ -367,10 +380,12 @@ body {
 #burger {
     height: 30px;
     width: 30px;
+    display: block;
 }
 #cart {
     height: 30px;
     width: 30px;
+    display: block;
 }
 .account p {
     display: none;
