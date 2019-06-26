@@ -93,7 +93,14 @@ body {
     height: 1292px;
     width: auto;
 }
-*/ ITS A DIFFERENT IMAGE WHEN SHRUNK DOWN TO MOBILE
+
+#vanlifemob {
+    display: none;
+    height: 733px;
+    width: auto;
+}
+
+/* ITS A DIFFERENT IMAGE WHEN SHRUNK DOWN TO MOBILE*/
 
 /*----------------------------------------------*/
 .shirts {
@@ -254,55 +261,65 @@ button {
 
 /*MOBILE*/
 @media screen and (max-width: 600px) {
-  .container {
+.container {
     display: grid;
     grid-template-areas:
-      "free"
-      "seven"
-      "new"
-      "van"
-      "shirt"
-      "pants"
-      "lots"
-      "follow"
-      "five"
-      "service"
-      "cards"
-      ;    
+        "free"
+        "seven"
+        "new"
+        "van"
+        "shirt"
+        "pants"
+        "lots"
+        "follow"
+        "five"
+        "service"
+        "cards"
+        ;    
         
-  }
+}
   
-    body {
+body {
     background-color: green;
-  }
+}
+
+#vanlife {
+    display: none;
+}
+
+#vanlifemob {     /*FIGURE OUT HOW TO REPLACE THIS WITH THE OG PHOTO*/
+    display: block;
+}
+
 }
 
 /*TABLET*/
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
-    .container {
+.container {
     display: grid;
     grid-template-areas:
-      "free free free"
-      "seven seven seven"
-      "new new new"
-      "van van van"
-      "shirt shirt shirt"
-      "pants pants pants"
-      "lots lots lots"
-      "follow follow follow"
-      "five five five"
-      "service service service"
-      "cards cards cards"
-      ;    
+        "free free free"
+        "seven seven seven"
+        "new new new"
+        "van van van"
+        "shirt shirt shirt"
+        "pants pants pants"
+        "lots lots lots"
+        "follow follow follow"
+        "five five five"
+        "service service service"
+        "cards cards cards"
+        ;    
         
-    }  
-    body {
-    background-color: blue;
-  }
+}  
 
-  #flowershirt {
-      display: none; /* this is how to get rid of images when downsizing */
-  }
+body {
+        background-color: blue;
+}
+
+#flowershirt {
+       display: none; /* this is how to get rid of images when downsizing */
+}
 
 }
