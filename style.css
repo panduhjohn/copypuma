@@ -179,10 +179,20 @@ h1 {
 
 input {
     /* width: 400px; */
-    height: 40px;
+    height: 44px;
+    width: 295px;
     box-sizing: border-box;    
 }
 
+button {
+    background-color: black;
+    color: white;
+    font-family: raleway, sans-serif;
+    font-size: 13px;
+    height: 43px;
+    width: 152px;
+    border: none;
+}
 
 /*----------------------------------------------*/
 
