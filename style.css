@@ -71,6 +71,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .topmenu {
     grid-area: name;
     background-color: green;
@@ -87,6 +88,16 @@ body {
     margin-right: 21px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+#burger {
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+#cart {
+    height: 30px;
+    width: 30px;
+    display: none;
 }
 /*----------------------------------------------*/
 
@@ -252,7 +263,7 @@ button {
 
 .creditcards {
     grid-area: cards;
-    background-color: gold;
+    /* background-color: gold; */
     height: 80px;
     display: flex;
     justify-content: space-evenly;
@@ -273,8 +284,49 @@ button {
 }
 
 /*----------------------------------------------*/
+/*TABLET*/
 
+@media screen and (min-width: 601px) and (max-width: 800px) {
+.container {
+    display: grid;
+    grid-template-areas:
+        "free free free"
+        "seven seven seven"
+        "new new new"
+        "van van van"
+        "shirt shirt shirt"
+        "pants pants pants"
+        "lots lots lots"
+        "follow follow follow"
+        "five five five"
+        "service service service"
+        "cards cards cards"
+        ;   
+         background-color: lime;    
+        
+}  
 
+body {
+    background-color: lime;
+}
+#burger {
+    height: 30px;
+    width: 30px;
+}
+#cart {
+    height: 30px;
+    width: 30px;
+}
+.account p {
+    display: none;
+}
+.topmenu p {
+    display: none;
+}
+
+}
+
+/*----------------------------------------------*/
 
 /*MOBILE*/
 @media screen and (max-width: 600px) {
@@ -297,7 +349,7 @@ button {
 }
   
 body {
-    background-color: green;
+    background-color: hotpink;
 }
 
 #vanlife {
@@ -307,36 +359,17 @@ body {
 #vanlifemob {     /*FIGURE OUT HOW TO REPLACE THIS WITH THE OG PHOTO*/
     display: block;
 }
-
+#burger {
+    height: 30px;
+    width: 30px;
 }
-
-/*TABLET*/
-
-@media screen and (min-width: 601px) and (max-width: 800px) {
-.container {
-    display: grid;
-    grid-template-areas:
-        "free free free"
-        "seven seven seven"
-        "new new new"
-        "van van van"
-        "shirt shirt shirt"
-        "pants pants pants"
-        "lots lots lots"
-        "follow follow follow"
-        "five five five"
-        "service service service"
-        "cards cards cards"
-        ;    
-        
-}  
-
-body {
-        background-color: blue;
+#cart {
+    height: 30px;
+    width: 30px;
 }
-
-#flowershirt {
-       display: none; /* this is how to get rid of images when downsizing */
+.account p {
+    display: none;
 }
-
+.topmenu p {
+    display: none;
 }
