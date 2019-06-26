@@ -26,7 +26,7 @@
         "service service service service service"
         "cards cards cards cards cards"
         ;
-    grid-template-columns: repeat(1, 1fr) ; 
+    /* grid-template-columns: repeat(1, 1fr) ;  */
     /* I TRIED TO SET TO MOVE AROUND WITH GRID. MESSED EVERTHING UP */    
     /* grid-template-columns: repeat(10, 10%) ; 
     grid-template-rows: repeat(100, 1%); */
@@ -49,6 +49,8 @@
 /*----------------------------------------------*/
 .menu {
     grid-area: seven;
+    /* display: flex;
+    justify-content: center; */
 }
 
 #toplogo {
@@ -57,13 +59,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    /* background-color: blue; */
     vertical-align: top;
 }
 
 .account {
     grid-area: name;
-    background-color: pink;
+    /* background-color: pink; */
     font-size: 15px;
     letter-spacing: 0.2em;
     display: flex;
@@ -76,7 +78,7 @@
 
 .topmenu {
     grid-area: name;
-    background-color: green;
+    /* background-color: green; */
     font-size: 13px;
     letter-spacing: 0.2em;
     display: flex;
@@ -111,7 +113,7 @@
 .redvan {
     display: grid;
     grid-area: van;
-    background-color: orange;
+    /* background-color: orange; */
     /* object-fit: cover; */
     width: 100%;
     /* background-image: url(assets/redvan.jpg);
@@ -119,7 +121,9 @@
     background-size: contain; */
 
 }
-
+.redvan img {
+    max-width: 100%;
+}
 #vanlife {
     height: 1292px;
     width: 100%;
@@ -136,7 +140,7 @@
 /*----------------------------------------------*/
 .shirts {
     grid-area: shirt;
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 610px;
     display: flex;
     align-content: row;
@@ -154,7 +158,7 @@
 /*----------------------------------------------*/
 .pants {
     grid-area: pants;
-    background-color: thistle;
+    /* background-color: thistle; */
     display: flex;
     align-content: row;
     justify-content: space-evenly;
@@ -179,7 +183,7 @@
 /*----------------------------------------------*/
 .follow {
     grid-area: follow;
-    background-color: red;
+    /* background-color: red; */
 
 }
 .follow p {
@@ -195,12 +199,21 @@
 /*----------------------------------------------*/
 .caro {
     grid-area: five;
-    background-color: purple;
+    /* background-color: purple; */
 
 }
 .caro img {
     height: 410px;
     width: 330px;
+}
+#bluetab {
+    display: none;
+}
+#blacktab {
+    display: none;
+}
+#chairtab {
+    display: none;
 }
 
 
@@ -213,13 +226,17 @@
 
 .footer {
     grid-area: service;
-    background-color: fuchsia;
+    /* background-color: fuchsia; */
     height: 420px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: left;
+    /* display: grid;
+    grid-template-areas:
+    "service service service"
+    ; */
 
 }
 
@@ -294,9 +311,11 @@ button {
 }
 
 #cards {
-    height: 43px;
+    display: flex;
+    justify-items: right;
+    height: 35px;
     padding-right: 200px;
-    /* width: 486px; */
+    width: 486px;
 }
 
 /*----------------------------------------------*/
@@ -315,7 +334,7 @@ button {
         "lots lots lots"
         "follow follow follow"
         "five five five"
-        "service service service"
+        "service service"
         "cards cards cards"
         ;   
          background-color: lime;    
@@ -335,11 +354,54 @@ body {
     width: 30px;
     display: block;
 }
+.account {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    ;
+    justify-content: space-around;
+}
+
 .account p {
     display: none;
 }
 .topmenu p {
     display: none;
+}
+.pants {
+    display: none;
+}
+#blueshorts {
+    display: none;
+}
+#uglyshirt {
+    display: none;
+}
+#blackdude {
+    display: none;
+}
+#chair {
+    display: none;
+}
+#flowershirt {
+    display: none;
+}
+
+#bluetab {
+        display: block;
+    height: 200px;
+    width: 200px;
+    
+}
+#blacktab {
+        display: block;
+    height: 200px;
+    width: 200px;
+}
+#chairtab {
+        display: block;
+    height: 200px;
+    width: 200px;
 }
 
 }
@@ -362,8 +424,7 @@ body {
         "five"
         "service"
         "cards"
-        ;    
-        
+        ;           
 }
   
 body {
@@ -387,9 +448,53 @@ body {
     width: 30px;
     display: block;
 }
+.account {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    ;
+    justify-content: space-around;
+}
 .account p {
     display: none;
 }
 .topmenu p {
     display: none;
+}
+
+/* .officialshirts {
+    display: none;
+} */
+.pants {
+    display: none;
+}
+#blueshorts {
+    display: none;
+}
+#uglyshirt {
+    display: none;
+}
+#blackdude {
+    display: none;
+}
+#chair {
+    display: none;
+}
+#flowershirt {
+    display: none;
+}
+#bluetab {
+    display: block;
+    height: 200px;
+    width: auto;
+}
+#blacktab {
+        display: block;
+    height: 200px;
+    width: auto;
+}
+#chairtab {
+        display: block;
+    height: 200px;
+    width: auto;
 }
